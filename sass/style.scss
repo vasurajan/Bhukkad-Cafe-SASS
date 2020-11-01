@@ -1,277 +1,253 @@
-$primary-color: #417217;
-$color-white: #fff;
+@import "utilities/variables";
+@import "base/reset";
+@import "base/typography.scss";
+@import "base/globals";
+@import "utilities/helpers";
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+@import "components/overlay";
+@import "components/social_icons";
 
-body {
-	font-family: 'Montserrat', sans-serif;
-}
+@import "layout/header.scss";
+@import "layout/about.scss";
+@import "layout/navbar.scss";
+@import "layout/food_offer";
+@import "layout/menu";
+@import "layout/testimonials";
+@import "layout/footer";
 
-.food_header {
-	width: 100%;
-	height: 600px;
-	background-image: url("../../img/header.png");
-	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
-}
+// .food_header {
+// 	width: 100%;
+// 	height: 600px;
+// 	background-image: url("../../img/header.png");
+// 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+// }
 
-.overlay {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	background-color: rgba($color: #000, $alpha: 0.5);
-}
+// .overlay {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: center;
+// 	align-items: center;
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: rgba($color: #000, $alpha: 0.5);
+// }
 
-.valign_wrapper {
-	text-align: center;
-}
+// .valign_wrapper {
+// 	text-align: center;
+// }
 
-.site_heading {
-	color: $color-white;
-	font-size: 100px;
-	font-weight: bold;
-}
+// .site_heading {
+// 	color: $color-white;
+// 	font-size: 100px;
+// 	font-weight: bold;
+// }
 
-.site_subheading {
-	font-size: 20px;
-	color: $color-white;
-	letter-spacing: 6px;
-}
+// .site_subheading {
+// 	font-size: 20px;
+// 	color: $color-white;
+// 	letter-spacing: 6px;
+// }
 
-.navbar {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	margin-bottom: auto;
-	background-color: rgba($color:$color-white, $alpha: 0.8);
-	ul {
-		list-style-type: none;
-		display: flex;
-		a {
-			display: block;
-			text-decoration: none;
-			color: #333;
-			padding: 20px;
+// .navbar {
+// 	display: flex;
+// 	justify-content: center;
+// 	width: 100%;
+// 	margin-bottom: auto;
+// 	background-color: rgba($color:$color-white, $alpha: 0.8);
+// 	ul {
+// 		list-style-type: none;
+// 		display: flex;
+// 		a {
+// 			display: block;
+// 			text-decoration: none;
+// 			color: #333;
+// 			padding: 20px;
 
-			&.active {
-				color: $primary-color;
-			}
-		}
-	}
-}
+// 			&.active {
+// 				color: $primary-color;
+// 			}
+// 		}
+// 	}
+// }
 
-.mb_auto {
-	margin-bottom: auto;
-}
+// .mb_auto {
+// 	margin-bottom: auto;
+// }
 
-.text-center {
-	text-align: center;
-}
+// .text-center {
+// 	text-align: center;
+// }
 
-h2 {
-	margin-top: 20px;
-	margin-bottom: 70px;
-	text-transform: uppercase;
-	font-size: 35px;
-	color: #333;
-}
+// .margin-top {
+// 	margin-top: 30px;
+// }
+// .margin-bottom {
+// 	margin-bottom: 30px;
+// }
+// .margin-both {
+// 	margin: 30px 0;
+// }
 
-h3 {
-	color: #444;
-	font-weight: 400;
-	font-size: 30px;
-	text-transform: uppercase;
-}
+// .rounded {
+// 	border-radius: 4px;
+// }
 
-h4 {
-	color: #444;
-	font-size: 25px;
-	font-weight: 600;
-	text-transform: uppercase;
-}
+// .color-primary {
+// 	color: $primary-color;
+// }
 
-h5 {
-	font-size: 20px;
-	font-weight: 400;
-	color: $primary-color;
-}
+// .color-secondary {
+// 	color: #555;
+// }
 
-.margin-top {
-	margin-top: 30px;
-}
-.margin-bottom {
-	margin-bottom: 30px;
-}
-.margin-both {
-	margin: 30px 0;
-}
+// .color-white {
+// 	color: $color-white;
+// }
 
-.rounded {
-	border-radius: 4px;
-}
+// .line-space {
+// 	line-height: 40px;
+// }
 
-.color-primary {
-	color: $primary-color;
-}
+// figure {
+// 	position: relative;
+// 	width: 310px;
+// 	height: 310px;
+// 	img {
+// 		width: 100%;
+// 		height: 100%;
+// 		box-shadow: 0px 0px 10px 2px rgba($color: #000000, $alpha: 0.2);
+// 	}
+// 	.back {
+// 		position: absolute;
+// 		top: 40px;
+// 		left: -40px;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: $primary-color;
+// 		z-index: -1;
+// 	}
+// }
 
-.color-secondary {
-	color: #555;
-}
+// .food_about {
+// 	padding: 80px 0;
+// }
 
-.color-white {
-	color: $color-white;
-}
+// .food_icon {
+// 	display: flex;
+// 	width: 100px;
+// 	height: 100px;
+// 	background-color: $primary-color;
+// 	color: #fff;
+// 	border-radius: 50%;
 
-.line-space {
-	line-height: 40px;
-}
+// 	i {
+// 		font-size: 40px;
+// 		margin: auto;
+// 	}
+// }
 
-figure {
-	position: relative;
-	width: 310px;
-	height: 310px;
-	img {
-		width: 100%;
-		height: 100%;
-		box-shadow: 0px 0px 10px 2px rgba($color: #000000, $alpha: 0.2);
-	}
-	.back {
-		position: absolute;
-		top: 40px;
-		left: -40px;
-		width: 100%;
-		height: 100%;
-		background-color: $primary-color;
-		z-index: -1;
-	}
-}
+// .food_offer {
+// 	width: 100%;
+// 	height: 500px;
+// 	background-image: url("../../img/offer.png");
+// 	color: $color-white;
 
-.food_about {
-	padding: 80px 0;
-}
+// 	&_heading {
+// 		font-weight: 600;
+// 		font-size: 50px;
+// 		text-transform: uppercase;
+// 	}
 
-.food_icon {
-	display: flex;
-	width: 100px;
-	height: 100px;
-	background-color: $primary-color;
-	color: #fff;
-	border-radius: 50%;
+// 	&_subheading {
+// 		font-weight: 300;
+// 		letter-spacing: 5px;
+// 	}
+// }
 
-	i {
-		font-size: 40px;
-		margin: auto;
-	}
-}
+// .food_footer {
+// 	background-color: #222;
+// 	color: #fff;
+// }
 
-.food_offer {
-	width: 100%;
-	height: 500px;
-	background-image: url("../../img/offer.png");
-	color: $color-white;
+// .line-space {
+// 	line-height: 40px;
+// }
 
-	&_heading {
-		font-weight: 600;
-		font-size: 50px;
-		text-transform: uppercase;
-	}
+// .list-inline {
+// 	list-style-type: none;
+// 	display: flex;
 
-	&_subheading {
-		font-weight: 300;
-		letter-spacing: 5px;
-	}
-}
+// 	li {
+// 		margin-right: 20px;
+// 	}
+// }
 
-.food_footer {
-	background-color: #222;
-	color: #fff;
-}
+// .offer-btn {
+// 	display: inline-block;
+// 	text-decoration: none;
+// 	color: $primary-color;
+// 	background-color: $color-white;
+// 	padding: 10px 25px;
+// 	margin-top: 15px;
+// 	border-radius: 27px;
+// 	transition: 0.4s all;
+// 	&:hover {
+// 		background-color: $primary-color;
+// 		color: $color-white;
+// 	}
+// }
 
-.line-space {
-	line-height: 40px;
-}
+// .menu {
+// 	list-style-type: none;
+// 	&_item {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		color: #707070;
+// 		line-height: 50px;
+// 	}
 
-.list-inline {
-	list-style-type: none;
-	display: flex;
+// 	&_price {
+// 		color: $primary-color;
+// 	}
+// }
 
-	li {
-		margin-right: 20px;
-	}
-}
+// .food_testimonial {
+// 	width: 100%;
+// 	height: 500px;
+// 	background-image: url("../../img/testimonial.png");
+// }
 
-.offer-btn {
-	display: inline-block;
-	text-decoration: none;
-	color: $primary-color;
-	background-color: $color-white;
-	padding: 10px 25px;
-	margin-top: 15px;
-	border-radius: 27px;
-	transition: 0.4s all;
-	&:hover {
-		background-color: $primary-color;
-		color: $color-white;
-	}
-}
+// .testimonials {
+// 	width: 800px;
+// 	background-color: rgba($color: $color-white, $alpha: 0.8);
+// 	padding: 60px 30px;
+// 	border-radius: 4px;
+// 	box-shadow: 0px 0px 10px 3px rgba($color: #000000, $alpha: 0.3);
 
-.menu {
-	list-style-type: none;
-	&_item {
-		display: flex;
-		justify-content: space-between;
-		color: #707070;
-		line-height: 50px;
-	}
+// 	&_text {
+// 		color: #444;
+// 		line-height: 40px;
+// 	}
+// }
 
-	&_price {
-		color: $primary-color;
-	}
-}
+// .social-icons {
+// 	list-style-type: none;
+// 	display: flex;
 
-.food_testimonial {
-	width: 100%;
-	height: 500px;
-	background-image: url("../../img/testimonial.png");
-}
+// 	li {
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		border-radius: 50%;
+// 		width: 50px;
+// 		height: 50px;
+// 		background-color: $primary-color;
+// 		margin-right: 20px;
+// 		transition: 0.4s all;
 
-.testimonials {
-	width: 800px;
-	background-color: rgba($color: $color-white, $alpha: 0.8);
-	padding: 60px 30px;
-	border-radius: 4px;
-	box-shadow: 0px 0px 10px 3px rgba($color: #000000, $alpha: 0.3);
-
-	&_text {
-		color: #444;
-		line-height: 40px;
-	}
-}
-
-.social-icons {
-	list-style-type: none;
-	display: flex;
-
-	li {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-radius: 50%;
-		width: 50px;
-		height: 50px;
-		background-color: $primary-color;
-		margin-right: 20px;
-		transition: 0.4s all;
-
-		&:hover {
-			background-color: #fff;
-			color: $primary-color;
-		}
-	}
-}
+// 		&:hover {
+// 			background-color: #fff;
+// 			color: $primary-color;
+// 		}
+// 	}
+// }
